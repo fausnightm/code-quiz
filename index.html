@@ -33,8 +33,8 @@
         </div>
     </nav>
 
-    <!-- Quiz Container -->
-    <div id="landing-container" class="container">
+    <!-- Prompt Start Container -->
+    <section id="landing-container" class="container">
         <div class="row mb-3">
             <div class="col-12 text-center">
                 <h1>Code Quiz</h1>
@@ -50,7 +50,39 @@
                 <button id="start-button" type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
             </div>
         </div>
+    </section>
+
+    <!-- Question Container -->
+    <div id="quiz-container" class="container d-none hide">
+        <p id="title"></p>
+
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <div id="scoreindicator" class="invisible">
+            <p>&nbsp;</p>
+        </div>
     </div>
+
+    <section id="finish" class="hide">
+        <h1>All Done</h1>
+        <p>Your final score is:&nbsp;<span id="score"></span></p>
+        <div id="records">
+          <p>Enter initials: </p><input id="initials" type="text"> 
+          <button class="btn btn-secondary">Submit</button>
+        </div>
+        <div id="errorIndicator" class="invisible">
+          <p>&nbsp;</p>
+        </div>
+      </section>
+      
+      <section id="highscores" class="hide">
+          <h1>High Scores</h1>
+          <div></div>
+          <button id="reset" class="btn btn-secondary">Go Back</button> 
+          <button id="clearScores" class="btn btn-secondary">Clear Highscores</button>
+      </section>
 
   
     <script src="./assets/js/script.js"></script>
