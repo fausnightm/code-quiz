@@ -11,6 +11,46 @@
     <link rel="stylesheet"  type= "text/css" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Nav Bar with High scores link and timer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container navbar-container mx-0">
+            <div class="row w-100">
+                <div class="col-4 col-md-2">
+                    <button type="button" id="highscore-button" class="btn btn-light">View High Scores</button> 
+                </div>
+                <div class="col-3 col-md-7"></div>
+                <div class="col-5 col-md-3">
+                    <form>
+                        <div class="form-group row">
+                            <label for="time-remaining" class="nav-time col-sm-7 col-form-label">Time Remaining</label>
+                            <div class="col-sm-5">
+                                <input type="number" readonly class="form-control" id="time-remaining" placeholder="0">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Quiz Container -->
+    <div id="landing-container" class="container">
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <h1>Code Quiz</h1>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                <p>Answer all the questions before the timer runs out!  Each wrong answer will subtract 15 seconds from the timer.  The more time left on the clock when all questions are answered, the higher your score!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button id="start-button" type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
+            </div>
+        </div>
+    </div>
 
   
     <script src="./assets/js/script.js"></script>

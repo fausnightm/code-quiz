@@ -1,0 +1,21 @@
+* {
+    margin: auto;
+}
+body {
+    margin: auto;
+}
+
+/* styling the nav bar */
+
+.btn {
+    background-color: rebeccapurple;
+    border: purple;
+}
+
+.nav-time {
+    color: seashell;
+}
+
+.navbar-container {
+    max-width: none;
+}
