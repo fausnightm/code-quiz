@@ -18,5 +18,10 @@ var questions = [
         title: "Which of these is not a way to save a variable",
         choices: ["if", "var", "let", "const"],
         answer: "if"
-      },
+    },
+    {
+        title: "Question 5: The logical operator that represents 'or' is ____.",
+        choices: ["||", "OR", "&&", "==="],
+        answer: "||"
+    },
 ];

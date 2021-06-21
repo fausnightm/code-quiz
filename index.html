@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet"  type= "text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    <!-- Nav Bar with High scores link and timer -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container navbar-container mx-0">
             <div class="row w-100">
@@ -22,7 +22,7 @@
                 <div class="col-5 col-md-3">
                     <form>
                         <div class="form-group row">
-                            <label for="time-remaining" class="nav-time col-sm-7 col-form-label">Time Remaining</label>
+                            <label for="time-remaining" class="col-sm-7 col-form-label">Time Remaining</label>
                             <div class="col-sm-5">
                                 <input type="number" readonly class="form-control" id="time-remaining" placeholder="0">
                             </div>
@@ -33,8 +33,7 @@
         </div>
     </nav>
 
-    <!-- Prompt Start Container -->
-    <section id="landing-container" class="container">
+    <div id="landing-container" class="container">
         <div class="row mb-3">
             <div class="col-12 text-center">
                 <h1>Code Quiz</h1>
@@ -50,43 +49,48 @@
                 <button id="start-button" type="button" class="btn btn-secondary btn-lg">Start Quiz</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Question Container -->
-    <div id="quiz-container" class="container d-none hide">
-        <p id="title"></p>
-
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <div id="scoreindicator" class="invisible">
-            <p>&nbsp;</p>
+    <div id="quiz-container" class="container d-none">
+        
+    </div>
+    <div id="final-container" class="container d-none">
+        <div class="row">
+            <div class="col-12 text-center">
+                <form>
+                    <div class="form-group row">
+                        <label for="final-score" class="col-sm-7 col-form-label">Final Score</label>
+                        <div class="col-sm-5">
+                            <input type="number" readonly class="form-control" id="final-score" placeholder="0">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="form-group">
+                      <label for="initials-entry">Initials</label>
+                      <input type="text" class="form-control" id="initials-entry" placeholder="Enter initials">
+                    </div>
+                    <button id="submit-initials" type="button" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="highscore-container" class="container d-none">
+        <div class="row">
+            <div class="col-2"></div>
+            <div id="highscore-table" class="col-8">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>High Scores</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
         </div>
     </div>
 
-    <section id="finish" class="hide">
-        <h1>All Done</h1>
-        <p>Your final score is:&nbsp;<span id="score"></span></p>
-        <div id="records">
-          <p>Enter initials: </p><input id="initials" type="text"> 
-          <button class="btn btn-secondary">Submit</button>
-        </div>
-        <div id="errorIndicator" class="invisible">
-          <p>&nbsp;</p>
-        </div>
-      </section>
-      
-      <section id="highscores" class="hide">
-          <h1>High Scores</h1>
-          <div></div>
-          <button id="reset" class="btn btn-secondary">Go Back</button> 
-          <button id="clearScores" class="btn btn-secondary">Clear Highscores</button>
-      </section>
-
-  
+    <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
 
-    
 </body>
 </html>
